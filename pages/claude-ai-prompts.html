@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude AI Prompts — YogTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    /* Collapsible prompt body */
+    .prompt-card .prompt-body {
+      max-height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-width: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .55s var(--ease), opacity .35s var(--ease),
+                  padding .35s var(--ease), margin .35s var(--ease), border-width .2s var(--ease);
+    }
+    .prompt-card.open .prompt-body {
+      max-height: 480px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      border-width: 1px;
+      opacity: 1;
+      overflow-y: auto;
+    }
+    .prompt-actions {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .expand-btn {
+      background: var(--bg-soft);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: .75rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      transition: all .3s var(--ease);
+    }
+    .expand-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .expand-btn .chev {
+      display: inline-block;
+      transition: transform .4s var(--ease);
+      font-size: .8rem;
+    }
+    .prompt-card.open .expand-btn .chev { transform: rotate(180deg); }
+    .prompt-card .copy-btn-pro {
+      display: none;
+    }
+    .prompt-card.open .copy-btn-pro {
+      display: inline-flex;
+      align-items: center;
+      animation: fadeIn .3s var(--ease-out);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="logo-section"><span class="logo-mark">YT</span><span class="brand-name">Yog<span>Tech</span></span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="notifications.html" class="active">Notifications</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="knob"></span></button>
+        <div class="hamburger" role="button" tabindex="0"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="hero-eyebrow"><span class="dot"></span> AI Toolkit</span>
+      <h1>🤖 Claude AI Prompts For Your Channel</h1>
+      <p>Powerful AI prompts optimized for Indian YouTube creators — niche discovery, branding, content planning &amp; SEO.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 1rem;">
+    <div class="container" style="max-width: 1000px;">
+      <div class="prompts-grid reveal-stagger">
+
+        <div class="prompt-card">
+          <h3>1️⃣ Find Your YouTube Niche (India-Optimized)</h3>
+          <div class="prompt-summary"><strong>What it does:</strong> Helps you discover high-opportunity YouTube niches for Indian audiences. Analyzes CPM rates, competition, viral potential, and difficulty to rank the top 10 niches to consider for 2026.</div>
+          <div class="prompt-body">Act as an elite YouTube growth strategist who specializes in identifying high-opportunity YouTube niches before they become saturated.
+
+Important Context:
+My target audience is primarily Indian viewers and Indian content creators.
+
+Optimize all strategies, examples, monetization suggestions, SEO ideas, and audience psychology specifically for:
+* Indian YouTube audience behavior
+* Indian search trends
+* Indian creator ecosystem
+* Indian CPM realities
+* Hinglish content performance
+* Mobile-first viewers
+* Small creators from India
+
+My goal:
+Find the best niche for long-term channel growth, audience loyalty, and monetization potential in the Indian market.
+
+Analyze the top 10 YouTube niches based on:
+* High CPM in India
+* Low-to-medium competition
+* Evergreen Indian audience demand
+* Viral potential in India
+* Beginner creator opportunity
+* Monetization beyond AdSense
+
+For each niche include:
+1. Average CPM range in India
+2. Competition level (1–10)
+3. Content difficulty
+4. Virality potential
+5. Audience demand trend in India
+6. Best content format (Shorts, Long-form, faceless, commentary, tutorials, etc.)
+7. 3 monetization methods beyond AdSense
+8. 3-word channel concept
+9. Example video ideas
+10. Why this niche is still underexploited in India
+
+Rules:
+* Avoid oversaturated niches unless opportunity still outweighs competition
+* Focus on niches that Indian small creators can realistically grow in
+* Prioritize Hindi/Hinglish-friendly opportunities
+* Do not suggest generic "motivation" or "daily vlogs"
+* Prioritize niches likely to grow in India in 2026 and beyond
+* Explain your reasoning like a real strategist, not an AI assistant
+* Consider Indian Gen Z viewing habits and mobile-first consumption
+
+Final Output:
+Rank all 10 niches from best to worst opportunity with detailed strategic reasoning.</div>
+          <div class="prompt-actions">
+            <button class="expand-btn" onclick="togglePrompt(this)"><span class="label">View Prompt</span> <span class="chev">▼</span></button>
+            <button class="copy-btn-pro" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <h3>2️⃣ Build Your Channel Identity (India-Optimized)</h3>
+          <div class="prompt-summary"><strong>What it does:</strong> Creates a complete channel brand strategy tailored to Indian audiences — unique names, positioning, content pillars, visual direction, and a defensible competitive angle.</div>
+          <div class="prompt-body">Act as a world-class YouTube brand strategist who helps creators stand out in crowded niches.
+
+Important Context:
+My target audience is primarily Indian viewers and Indian content creators.
+
+Optimize all branding, audience psychology, content strategy, and positioning specifically for:
+* Indian creator ecosystem
+* Indian audience behavior
+* Hindi/Hinglish audiences
+* Mobile-first YouTube viewers
+* Indian Gen Z and young audiences
+
+My niche: [INSERT NICHE]
+My target audience: [INSERT AUDIENCE]
+My personality/style: [INSERT STYLE]
+
+Your task:
+Create a complete channel identity that feels memorable, differentiated, and highly brandable for the Indian market.
+
+Generate:
+1. 10 unique channel name ideas
+2. One powerful positioning statement
+3. One audience transformation statement
+4. One memorable tagline
+5. Target audience breakdown
+6. Audience frustrations, desires, and fears
+7. 4 non-overlapping content pillars
+8. A unique content angle competitors are NOT using
+9. Suggested visual brand direction
+10. Suggested thumbnail style for Indian audiences
+11. Recommended creator archetype
+12. Long-term brand expansion opportunities
+
+Rules:
+* Avoid generic creator branding
+* Make the channel identity emotionally memorable
+* The unique angle must be defensible and hard to copy
+* The audience should instantly understand why this channel is different
+* Optimize for authority + virality + loyalty
+* Consider Indian audience attention patterns
+* Suggest branding that works well for Hindi/Hinglish creators
+* Think like a top creator consultant, not an AI tool
+
+Final Output:
+Present everything in a structured creator-brand blueprint.</div>
+          <div class="prompt-actions">
+            <button class="expand-btn" onclick="togglePrompt(this)"><span class="label">View Prompt</span> <span class="chev">▼</span></button>
+            <button class="copy-btn-pro" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <h3>3️⃣ 90-Day Content Roadmap (India-Optimized)</h3>
+          <div class="prompt-summary"><strong>What it does:</strong> Generates a strategic 90-day video plan with 30 ideas, SEO &amp; virality scores, audience psychology, and a progressive content sequence to build authority and growth.</div>
+          <div class="prompt-body">Act as a YouTube content strategist who specializes in helping small creators build authority and consistent growth.
+
+Important Context:
+My audience is primarily Indian viewers.
+
+Optimize all content ideas, SEO strategies, hooks, viewer psychology, and content planning specifically for:
+* Indian YouTube trends
+* Indian search behavior
+* Hinglish content performance
+* Indian creator ecosystem
+* Mobile-first viewing habits
+* Indian Gen Z audiences
+
+My niche: [INSERT NICHE]
+My audience: [INSERT AUDIENCE]
+My current subscriber count: [INSERT COUNT]
+Upload capacity: [INSERT HOW MANY VIDEOS PER WEEK]
+
+Your task:
+Create a 90-day YouTube content roadmap optimized for:
+* discoverability
+* audience retention
+* binge watching
+* authority building
+* subscriber conversion
+
+Generate:
+1. 30 video ideas
+2. SEO score for each title
+3. Virality score for each title
+4. Viewer psychology behind each idea
+5. Thumbnail angle
+6. Hook idea for first 10 seconds
+7. Search-based vs virality-based classification
+8. Recommended upload schedule
+9. Content progression strategy
+10. Which videos should lead into other videos
+
+Rules:
+* Titles must sound human and clickable
+* Avoid generic AI-sounding titles
+* Balance search content and viral content
+* Optimize for YouTube in India for 2026
+* Include beginner-friendly and advanced content
+* Make the roadmap strategically progressive
+* Suggest Hinglish title variations when useful
+* Consider Indian trends and audience attention span
+
+Final Output:
+Create the roadmap in a table format with strategic explanations.</div>
+          <div class="prompt-actions">
+            <button class="expand-btn" onclick="togglePrompt(this)"><span class="label">View Prompt</span> <span class="chev">▼</span></button>
+            <button class="copy-btn-pro" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <h3>4️⃣ SEO + Thumbnail Strategy (India-Optimized)</h3>
+          <div class="prompt-summary"><strong>What it does:</strong> Develops a complete SEO and CTR optimization strategy for individual videos — 10 titles, keyword research, thumbnail concepts, description templates, tags, and A/B testing ideas.</div>
+          <div class="prompt-body">Act as an elite YouTube SEO and CTR strategist who optimizes videos for both discoverability and click-through rate.
+
+Important Context:
+My target audience is primarily Indian viewers.
+
+Optimize all SEO, thumbnail psychology, title strategy, and viewer targeting specifically for:
+* Indian YouTube search behavior
+* Indian audience psychology
+* Hinglish content performance
+* Indian creator ecosystem
+* Mobile-first users
+* Indian Gen Z viewers
+
+Video topic: [INSERT TOPIC]
+Channel niche: [INSERT NICHE]
+Target audience: [INSERT AUDIENCE]
+
+Your task:
+Build the complete SEO and thumbnail strategy for this video.
+
+Generate:
+1. 10 SEO-optimized title options
+2. CTR prediction for each title
+3. Main keyword + secondary keywords
+4. Search intent analysis
+5. 5 thumbnail concepts
+6. Emotional trigger used in each thumbnail
+7. Thumbnail text overlay ideas
+8. Thumbnail composition suggestions
+9. Full SEO description
+10. Suggested timestamps
+11. 20 strategic tags
+12. Suggested pinned comment
+13. Suggested CTA
+14. A/B testing ideas for thumbnails and titles
+
+Rules:
+* Titles must stay under 60 characters
+* Avoid clickbait without curiosity
+* Thumbnail text must be minimal and powerful
+* Optimize for both browse traffic and search traffic
+* Think like a YouTube growth consultant, not a keyword tool
+* Every suggestion must increase CTR or retention
+* Suggest Hinglish title ideas where useful
+* Prioritize Indian search trends and audience behavior
+
+Final Output:
+Deliver everything in a structured YouTube optimization report.</div>
+          <div class="prompt-actions">
+            <button class="expand-btn" onclick="togglePrompt(this)"><span class="label">View Prompt</span> <span class="chev">▼</span></button>
+            <button class="copy-btn-pro" onclick="copyPrompt(this)">📋 Copy Prompt</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section"><h3>YogTech</h3><p>Empowering creators with modern growth strategies and AI-driven tools.</p></div>
+      <div class="footer-section"><h4>Quick Links</h4><ul>
+        <li><a href="../index.html">Home</a></li><li><a href="videos.html">Videos</a></li>
+        <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="notifications.html">Notifications</a></li>
+      </ul></div>
+      <div class="footer-section"><h4>Follow Us</h4><div class="social-links">
+        <a href="javascript:void(0)" onclick="comingSoon()">Instagram</a>
+        <a href="javascript:void(0)" onclick="comingSoon()">Twitter</a>
+        <a href="javascript:void(0)" onclick="comingSoon()">LinkedIn</a>
+      </div></div>
+    </div>
+    <div class="footer-bottom">© 2026 YogTech. All rights reserved.</div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function togglePrompt(button) {
+      const card = button.closest('.prompt-card');
+      const isOpen = card.classList.toggle('open');
+      button.querySelector('.label').textContent = isOpen ? 'Hide Prompt' : 'View Prompt';
+    }
+    function copyPrompt(button) {
+      const text = button.closest('.prompt-card').querySelector('.prompt-body').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const original = button.textContent;
+        button.textContent = '✓ Copied!';
+        button.classList.add('copied');
+        showToast('Prompt copied to clipboard!');
+        setTimeout(() => { button.textContent = original; button.classList.remove('copied'); }, 1800);
+      });
+    }
+    function showToast(msg) {
+      const t = document.createElement('div');
+      t.className = 'copy-toast'; t.textContent = msg;
+      document.body.appendChild(t);
+      setTimeout(() => t.remove(), 3000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YogTech — Grow Your Social Media Smarter with AI & Tech</title>
+  <meta name="description" content="YogTech is your one-stop hub for social media growth, AI tools, and smart digital strategies for creators and brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo-section" title="YogTech home">
+        <span class="logo-mark">YT</span>
+        <span class="brand-name">Yog<span>Tech</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/videos.html">Videos</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/notifications.html">Notifications</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <span class="knob"></span>
+        </button>
+        <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="float-chip"><span class="emoji">🚀</span> YouTube Growth</span>
+    <span class="float-chip"><span class="emoji">🤖</span> AI Tools</span>
+    <span class="float-chip"><span class="emoji">📈</span> Smart Strategy</span>
+    <span class="float-chip"><span class="emoji">🎬</span> Faceless Content</span>
+
+    <div class="hero-inner reveal">
+      <span class="hero-eyebrow"><span class="dot"></span> AI · Growth · Creators</span>
+      <h1 class="hero-title">
+        Grow Your Social Media<br />
+        Smarter with <span class="accent">AI &amp; Tech</span>
+      </h1>
+      <p class="hero-sub">
+        Your one-stop hub for Social Media Growth, AI tools, and smart digital strategies —
+        helping creators and brands scale faster on YouTube, Instagram, and beyond.
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="scrollToLatestVideos()">Watch Latest Videos</button>
+        <a class="btn btn-secondary" href="pages/about.html">About YogTech</a>
+      </div>
+      <div class="hero-marquee">
+        <span>YouTube</span><span>Instagram</span><span>ChatGPT</span><span>Gemini</span><span>Canva</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Videos -->
+  <section class="latest-videos" id="latest-videos-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Fresh uploads</span>
+        <h2 class="section-title">Latest Videos</h2>
+        <p class="section-sub">Newest insights, tutorials, and strategies from the YogTech channel.</p>
+      </div>
+      <div class="videos-grid" id="latest-videos-container">
+        <div class="loading-state"><div class="spinner"></div>Loading videos…</div>
+      </div>
+      <div class="view-all-wrap reveal">
+        <a class="btn btn-outline" href="pages/videos.html">View All Videos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">What you'll learn</span>
+        <h2 class="section-title">Built for serious creators</h2>
+        <p class="section-sub">Practical skills, real frameworks, and AI-powered workflows.</p>
+      </div>
+      <div class="features-grid reveal-stagger">
+        <div class="feature-card"><div class="feature-icon">📱</div><h3>YouTube &amp; Instagram Growth</h3><p>Proven strategies to scale your audience consistently.</p></div>
+        <div class="feature-card"><div class="feature-icon">🤖</div><h3>AI Tools for Content</h3><p>Smart automation that compounds creator output.</p></div>
+        <div class="feature-card"><div class="feature-icon">🎬</div><h3>Video Enhancement</h3><p>Voice and video techniques used by pros.</p></div>
+        <div class="feature-card"><div class="feature-icon">⚡</div><h3>Mobile Workflows</h3><p>Create anywhere — your phone is the studio.</p></div>
+        <div class="feature-card"><div class="feature-icon">📈</div><h3>Growth Systems</h3><p>Build sustainable, repeatable digital success.</p></div>
+        <div class="feature-card"><div class="feature-icon">💡</div><h3>Productivity Hacks</h3><p>Work smarter, ship faster, stay consistent.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <div class="cta-inner">
+        <h2>Ready to Start Growing?</h2>
+        <p>Join thousands of creators using YogTech strategies to scale their channels.</p>
+        <a class="btn btn-primary" href="pages/contact.html">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>YogTech</h3>
+        <p>Empowering creators with modern growth strategies and AI-driven tools.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/videos.html">Videos</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/notifications.html">Notifications</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="javascript:void(0)" onclick="comingSoon()">Instagram</a>
+          <a href="javascript:void(0)" onclick="comingSoon()">Twitter</a>
+          <a href="javascript:void(0)" onclick="comingSoon()">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 YogTech. All rights reserved. · Powering your digital growth.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
