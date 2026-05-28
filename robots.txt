@@ -14,7 +14,7 @@ Allow: /pages/top-50-ideas.html
 Allow: /pages/claude-ai-prompts.html
 
 # Sitemap location
-Sitemap: https://github.com/piyushmaurya04/YogTech_Channel/sitemap.xml
+Sitemap: https://yogtech.netlify.app/sitemap.xml
 
 # Crawl delay for bot respect
 Crawl-delay: 1
