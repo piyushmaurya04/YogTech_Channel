@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /assets/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of all important pages
+Allow: /index.html
+Allow: /pages/videos.html
+Allow: /pages/about.html
+Allow: /pages/contact.html
+Allow: /pages/top-50-ideas.html
+Allow: /pages/claude-ai-prompts.html
+
+# Sitemap location
+Sitemap: https://github.com/piyushmaurya04/YogTech_Channel/sitemap.xml
+
+# Crawl delay for bot respect
+Crawl-delay: 1
